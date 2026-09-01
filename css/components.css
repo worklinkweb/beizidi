@@ -124,9 +124,19 @@
 }
 
 .hero-img-wrap img {
+  display: block;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
+}
+
+.hero-img-wrap figcaption {
+  padding: 11px 16px 13px;
+  border-top: 1px solid var(--border-color);
+  background: #ffffff;
+  color: var(--text-muted);
+  font-size: 12px;
+  text-align: center;
 }
 
 .hero-actions {
@@ -574,6 +584,99 @@
 
 .care-reminders li + li {
   margin-top: 6px;
+}
+
+.wear-illustration-card {
+  margin-bottom: 24px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+}
+
+.wear-illustration-card img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.wear-illustration-card figcaption {
+  padding: 13px 18px 16px;
+  color: var(--text-muted);
+  font-size: 12.5px;
+}
+
+.hydration-band {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 24px;
+  overflow: hidden;
+  border: 1px solid #ded4c4;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+}
+
+.hydration-copy {
+  padding: 24px 24px 0;
+}
+
+.hydration-copy h2 {
+  margin-bottom: 8px;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.hydration-copy .key-highlight {
+  white-space: nowrap;
+}
+
+.hydration-copy p {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.hydration-band img {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  object-fit: cover;
+}
+
+.care-photo-feature {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  margin-bottom: 26px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: var(--shadow-card);
+}
+
+.care-photo-feature img {
+  width: 100%;
+  max-height: 440px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.care-photo-feature figcaption {
+  padding: 24px;
+}
+
+.care-photo-feature h2 {
+  margin-bottom: 8px;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.care-photo-feature p {
+  color: var(--text-muted);
+  font-size: 13px;
 }
 
 /* Button */

@@ -20,7 +20,8 @@
   }
 
   .hero-img-wrap img {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 3 / 2;
+    object-position: center top;
   }
 
   .section {
@@ -53,6 +54,20 @@
 
   .care-reminders {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hydration-band,
+  .care-photo-feature {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    align-items: center;
+  }
+
+  .hydration-copy {
+    padding: 32px;
+  }
+
+  .care-photo-feature img {
+    max-height: 520px;
   }
 
   .care-method-card {

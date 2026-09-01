@@ -17,15 +17,11 @@
 
 .logo {
   display: inline-flex;
-  width: 120px;
-  height: 64px;
   align-items: center;
-}
-
-.logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  color: var(--text-main);
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
 }
 
 .nav-links {
@@ -99,9 +95,15 @@
 .hero h1 {
   margin-bottom: 16px;
   font-size: clamp(26px, 8vw, 42px);
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.4;
   word-break: keep-all;
+}
+
+.key-highlight {
+  color: var(--primary-gold-hover);
+  font-weight: 800;
+  background: linear-gradient(transparent 66%, rgba(197, 162, 109, 0.24) 66%);
 }
 
 .hero-desc {
@@ -169,7 +171,7 @@
 .section-title {
   margin-bottom: 8px;
   font-size: clamp(22px, 6vw, 32px);
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.45;
   word-break: keep-all;
 }
@@ -288,7 +290,7 @@
 .card-title {
   margin-bottom: 10px;
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .card-desc {
@@ -318,6 +320,260 @@
   background: var(--bg-soft-gold);
   color: var(--text-muted);
   font-size: 13px;
+}
+
+/* Customer stories */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.testimonial-card {
+  position: relative;
+  padding: 26px 24px 24px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  background: var(--bg-card);
+  box-shadow: var(--shadow-soft);
+}
+
+.testimonial-card::before {
+  position: absolute;
+  top: -15px;
+  right: 18px;
+  color: rgba(197, 162, 109, 0.18);
+  content: '“';
+  font-family: Georgia, serif;
+  font-size: 92px;
+  line-height: 1;
+}
+
+.testimonial-role {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--primary-gold-hover);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.testimonial-title {
+  max-width: 90%;
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.testimonial-copy {
+  color: var(--text-muted);
+  font-size: 13.5px;
+}
+
+/* Two care methods */
+.care-choice-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+}
+
+.care-method-card {
+  padding: 26px 22px;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  background: var(--bg-card);
+  box-shadow: var(--shadow-card);
+}
+
+.care-method-card--machine {
+  background: linear-gradient(145deg, #ffffff 0%, var(--bg-soft-gold) 160%);
+}
+
+.care-method-heading {
+  margin-bottom: 8px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.care-method-intro {
+  margin-bottom: 22px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.handwash-list,
+.care-steps {
+  display: grid;
+  gap: 14px;
+}
+
+.handwash-item,
+.care-step {
+  padding: 17px;
+  border: 1px solid #eadfcf;
+  border-radius: 15px;
+  background: #ffffff;
+}
+
+.handwash-item strong,
+.care-step h3 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.handwash-item p,
+.care-step p {
+  color: var(--text-muted);
+  font-size: 12.5px;
+}
+
+.care-step-top {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.care-step .line-icon {
+  flex: 0 0 auto;
+  width: 46px;
+  height: 46px;
+  margin: 0;
+  font-size: 20px;
+}
+
+.care-science {
+  margin-top: 11px;
+  padding-top: 10px;
+  border-top: 1px dashed #dbc9ad;
+  color: var(--primary-gold-hover);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Wearing guide */
+.wear-guide-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.video-card {
+  padding: 18px;
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+}
+
+.video-wrap {
+  position: relative;
+  width: 100%;
+  margin-bottom: 14px;
+  overflow: hidden;
+  border-radius: 12px;
+  aspect-ratio: 16 / 9;
+  background: var(--text-main);
+}
+
+.video-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-card p {
+  margin-bottom: 14px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.wear-steps {
+  display: grid;
+  gap: 12px;
+  list-style: none;
+}
+
+.wear-steps li {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 13px;
+  padding: 15px;
+  border-bottom: 1px solid #e5d8c5;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.wear-steps li > span {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid var(--primary-gold);
+  border-radius: 50%;
+  color: var(--primary-gold-hover);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.wear-steps h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.wear-steps p,
+.wear-tips p {
+  color: var(--text-muted);
+  font-size: 12.5px;
+}
+
+.wear-tips {
+  margin-top: 22px;
+  padding: 18px 20px;
+  border: 1px solid #dfccb0;
+  border-radius: 15px;
+  background: #ffffff;
+}
+
+.wear-tips strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.care-reminders {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.care-reminders section {
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  background: var(--bg-subtle);
+}
+
+.care-reminders h2 {
+  margin-bottom: 9px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.care-reminders ul {
+  padding-left: 20px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.care-reminders li + li {
+  margin-top: 6px;
 }
 
 /* Button */
